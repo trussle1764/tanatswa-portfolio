@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background: #f3f4f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #007BFF, #FFD700);
+    color: white;
+    text-align: center;
+}
+
+.hero .highlight {
+    color: #FFD700;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #FFD700;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+.secondary {
+    background: #222;
+    color: white;
+}
+
+.secondary:hover {
+    background: #FFD700;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.about-image img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #007BFF;
+}
+
+.about-text {
+    flex: 1;
+    text-align: center;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 0;
+    background: white;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;  /* Make the image responsive */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Soft shadow effect */
+    transition: transform 0.3s;  /* Smooth scaling effect */
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);  /* Slightly enlarge the image on hover */
+}
+
+.portfolio-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #FFD700, #007BFF);
+    color: white;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact form button {
+    width: 100%;
+    padding: 10px;
+    background: #FFD700;
+    color: #222;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact form button:hover {
+    background: #222;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 10px 0;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FFD700; /* Yellow on hover */
+}
